@@ -12,3 +12,18 @@
         }
     }
 }
+@include mobile{
+    .slp-approach {
+        &__out {
+            display: flex;
+            flex-wrap: wrap;
+            .slp-approach-tile {
+                width: calc(100% - 0px);
+                margin: 0 0 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

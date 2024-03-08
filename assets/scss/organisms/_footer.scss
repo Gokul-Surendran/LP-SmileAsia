@@ -5,7 +5,7 @@
     &__main{
         background-color: var(--clr-black90);
         background-position: center top 10px;
-        background-size: 50%;
+        background-size: 35%;
         background-repeat: no-repeat;
     }
     padding: 60px 0 0;
@@ -26,7 +26,22 @@
         }
         &-link{
             color: var(--clr-white);
-            &:hover{
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                bottom: 0;
+                background-color: #fff;
+                height: 1px;
+                width: 0;
+                transition: 0.3s;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                    transition: 0.3s;
+                }
                 color: var(--clr-red);
             }
         }
@@ -125,10 +140,22 @@
 }
 @include mobile{
     .slp-footer{
+        &__main{
+            background-size: 90%;
+        }
         &__top{
             flex-direction: column;
             .slp-footer__nav{
-                transform: translate(-20px, 0px);
+                justify-content: space-between;
+                width: 100%;
+                &-item{
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                }
             }
             .slp-footer__donate{
                 width: 100%;
