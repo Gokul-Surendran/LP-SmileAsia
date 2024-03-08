@@ -1,7 +1,7 @@
 .slp-button {
     background-color: #CA0014;
     border: 1px solid #CA0014;
-    padding: 14px 16px;
+    padding: 8px 16px;
     border-radius: 5px;
     color: #fff;
     font-weight: 600;
@@ -20,6 +20,10 @@
             border: 1px solid #CA0014 !important;
             transition: 0.3s;
         }
+    }
+
+    .navbar-collapse {
+        flex-grow: inherit;
     }
 
     &:hover {
