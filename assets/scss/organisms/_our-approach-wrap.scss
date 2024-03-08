@@ -1,0 +1,14 @@
+.slp-approach {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+
+    &__out {
+        display: flex;
+        flex-wrap: wrap;
+
+        .slp-approach-tile {
+            width: calc(33.3% - 16px);
+            margin: 0 8px;
+        }
+    }
+}
