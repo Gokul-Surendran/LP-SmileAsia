@@ -1,0 +1,74 @@
+.slp-header {
+    background-color: #090909;
+    padding: 16px 0;
+    .bg-light {
+        background-color: #090909 !important;
+    }
+    .navbar-brand {
+        color: #fff;
+        padding: 0;
+        display: inline-flex;
+        img {
+            width: 170px;
+            height: auto;
+        }
+    }
+    .navbar {
+        padding: 0;
+    }
+    .nav-link {
+        color: #fff !important;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            background-color: #fff;
+            height: 1px;
+            width: 0;
+            transition: 0.3s;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+                transition: 0.3s;
+            }
+        }
+    }
+    .navbar-collapse {
+        flex-grow: inherit;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0;
+        margin: 0 24px;
+        padding-bottom: 4px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        width: 65%;
+        justify-content: space-between;
+    }
+}
+
+@include mobile-tablet {
+    .slp-header {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            margin: 0;
+        }
+        .nav-item {
+            &:first-child {
+                padding-top: 32px;
+            }
+        }
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-bottom: 8px;
+        }
+        .navbar-toggler {
+            padding: 0;
+            box-shadow: none;
+        }
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 101.16 80.52'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M5.81,9.82C1.19,9.82.43,7.08.18,6.18a4.83,4.83,0,0,1,.6-3.93A4.71,4.71,0,0,1,4.08.13,14.19,14.19,0,0,1,6.21,0H95.57c2.05,0,4.66.66,5.45,3.79a4.82,4.82,0,0,1-3.9,5.89,11.11,11.11,0,0,1-1.8.13H5.81Z'/%3E%3Cpath class='cls-1' d='M5.6,80.52c-2,0-4.67-.66-5.46-3.79A4.84,4.84,0,0,1,4,70.83a12.49,12.49,0,0,1,1.81-.12H95.35c4.62,0,5.38,2.74,5.64,3.64a4.83,4.83,0,0,1-.61,3.93,4.69,4.69,0,0,1-3.3,2.12,14.5,14.5,0,0,1-2.12.12H5.6Z'/%3E%3Cpath class='cls-1' d='M14.66,45.18H5.51c-2,0-4.5-.64-5.33-3.65a4.82,4.82,0,0,1,.6-3.91A4.7,4.7,0,0,1,4.1,35.47a11.13,11.13,0,0,1,1.53-.11H26.1q11.85,0,23.69,0a8.06,8.06,0,0,1,3.25.72,4.58,4.58,0,0,1,2.31,5.19,4.77,4.77,0,0,1-4.11,3.77,13.56,13.56,0,0,1-1.86.1H14.66Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    }
+}
