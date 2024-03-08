@@ -1,0 +1,13 @@
+.slp-heading{
+    text-align: center;
+    &__red{
+        color: var(--clr-red);
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    &__black{
+        color: var(--clr-black90);
+        font-size: 22px;
+        font-weight: $font-bold;
+    }
+}
