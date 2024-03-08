@@ -4,5 +4,148 @@
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 60px 0;
+
+    &__out {
+        display: flex;
+        margin: 0 -16px;
+        align-items: center;
+    }
+
+    &__left {
+        width: calc(55% - 32px);
+        margin: 0 16px;
+    }
+
+    &__right {
+        width: calc(45% - 32px);
+        margin: 0 16px;
+        display: flex;
+        justify-content: flex-end;
+        &-img {
+            width: 80%;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__yellow-txt {
+        color: #FFD500;
+        font-size: 16px;
+        font-weight: 500;
+        padding-bottom: 24px;
+    }
+    
+    &__heading {
+        font-size: 50px;
+        color: #fff;
+        font-weight: 800;
+        padding-bottom: 24px;
+    }
+
+    &__discr {
+        font-size: 15px;
+        color: #fff;
+        font-weight: 400;
+        padding-bottom: 24px;
+    }
+
+    &__txt {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        padding-bottom: 24px;
+    }
+
+    &__donate-out {
+        display: flex;
+    }
+
+    &__donate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            background-color: #CA0014;
+            padding: 14px 24px;
+            border-radius: 35px;
+            width: 230px;
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+            padding-top: 8px;
+            text-align: center;
+        }
+    }
+}
+
+@include mobile-tablet {
+    .slp-banner {
+        &__out {
+            flex-direction: column;
+        }
+        &__left {
+            width: calc(100% - 32px);
+            margin: 0 16px;
+            padding-bottom: 32px;
+        }
+
+        &__right {
+            width: calc(100% - 32px);
+            margin: 0 16px;
+            justify-content: flex-start;
+            &-img {
+                width: 60%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .slp-banner {
+        padding: 32px 0;
+        &__donate-out {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__donate {
+            margin-right: 0;
+            padding-bottom: 16px;
+        }
+        &__right {
+            justify-content: center;
+            &-img {
+                width: 80%;
+            }
+        }
+        &__heading {
+            font-size: 32px;
+        }
+        &__yellow-txt, &__heading, &__discr {
+            padding-bottom: 16px;
+        }
+    }
 }
