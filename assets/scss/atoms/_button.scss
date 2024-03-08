@@ -11,24 +11,21 @@
     position: relative;
     overflow: hidden;
     z-index: 2;
-    // &::after {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     width: ;
-    //     height: 100%;
-    //     background-color: #090909;
-    //     transition: 0.3s;
-    // }
+
+    &--white {
+        background-color: #fff;
+        color: #000;
+        &:hover {
+            background-color: #CA0014 !important;
+            border: 1px solid #CA0014 !important;
+            transition: 0.3s;
+        }
+    }
+
     &:hover {
         color: #fff;
         border: 1px solid #fff;
         background-color: #090909;
         transition: 0.3s;
-        // &::after {
-        //     width: 100%;
-        //     transition: 0.3s;
-        // }
     }
 }
