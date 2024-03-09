@@ -4,10 +4,12 @@
         color: var(--clr-red);
         font-size: 15px;
         margin-bottom: 12px;
+        font-weight: 700;
     }
     &__black{
         color: var(--clr-black90);
         font-size: 24px;
         font-weight: $font-bold;
+        font-weight: 800;
     }
 }
