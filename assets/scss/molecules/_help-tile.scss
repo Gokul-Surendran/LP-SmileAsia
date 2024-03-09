@@ -48,6 +48,17 @@
         }
     }
 }
+
+@include tablet {
+    .slp-help {
+        &__desc {
+            min-height: 128px;
+        }
+    }
+    
+}
+
+
 @include mobile{
     .slp-help{
         &__in{
