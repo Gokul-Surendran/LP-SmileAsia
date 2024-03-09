@@ -1,23 +1,26 @@
 .slp-footer{
-    .slp-button{
+    .slp-button {
         font-weight: $font-bold;
     }
-    &__main{
+    &__main {
         background-color: var(--clr-black90);
         background-position: center top 10px;
         background-size: 35%;
         background-repeat: no-repeat;
     }
     padding: 60px 0 0;
-    &__top{
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
-    &__logo{
+    &__logo {
         img{
             max-width: 190px;
         }
+    }
+    .slp-button.desk {
+        display: block;
     }
     &__nav{
         display: flex;

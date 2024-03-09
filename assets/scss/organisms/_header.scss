@@ -13,6 +13,9 @@
             height: auto;
         }
     }
+    .slp-button.mob {
+        display: none;
+    }
     .navbar {
         padding: 0;
     }
@@ -52,13 +55,46 @@
 
 @include mobile-tablet {
     .slp-header {
-        .navbar-expand-lg .navbar-nav .nav-link {
-            margin: 0;
+        .navbar-brand {
+            width: 110px;
+        }
+        .navbar-toggler-icon {
+            width: 25px;
+            height: 25px;
+        }
+        .container-fluid {
+            padding: 0;
+        }
+        .slp-button.desk {
+            display: none;
+        }
+        .slp-button.mob {
+            display: flex !important;
+        }
+        .slp-button {
+            font-size: 10px;
+            padding: 6px 8px;
+        }
+        .navbar-nav {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 32px;
         }
         .nav-item {
-            &:first-child {
-                padding-top: 32px;
+            padding-right: 32px;
+            &:last-child {
+                padding-right: 0;
             }
+        }
+        .navbar-brand {
+            img {
+                width: 90px;
+            }
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            margin: 0;
         }
         .navbar-expand-lg .navbar-nav .nav-link {
             padding-bottom: 8px;
