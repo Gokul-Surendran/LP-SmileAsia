@@ -83,6 +83,7 @@
         display: flex;
         justify-content: flex-end;
         margin-top: -8px;
+        width: 85%;
     }
 
     &__status {
@@ -145,6 +146,7 @@
 
         &__btnout {
             margin-top: 8px;
+            width: 100%;
         }
 
         &__status {
@@ -201,6 +203,7 @@
         &__btnout {
             margin-top: 8px;
             justify-content: center;
+            width: 100%;
         }
 
         &__status {
