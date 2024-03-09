@@ -49,6 +49,14 @@
     }
 }
 
+@include tablet-pro {
+    .slp-help {
+        &__desc {
+            min-height: 90px;
+        }
+    } 
+}
+
 @include tablet {
     .slp-help {
         &__title {
@@ -57,8 +65,7 @@
         &__desc {
             min-height: 102px;
         }
-    }
-    
+    } 
 }
 
 
