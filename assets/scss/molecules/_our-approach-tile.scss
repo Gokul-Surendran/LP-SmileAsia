@@ -56,6 +56,14 @@
 }
 
 
+@include tablet-pro {
+    .slp-approach-tile {
+        &__txt {
+            min-height: 90px;
+        }
+    }
+}
+
 @include tablet {
     .slp-approach-tile {
         &__txt {
