@@ -176,6 +176,7 @@
         }
         &__end{
             flex-direction: column;
+            align-items: flex-start;
         }
         .slp-footer__sociable{
             transform: translate(-10px, 0px);
