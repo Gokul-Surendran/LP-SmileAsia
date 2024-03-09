@@ -24,7 +24,7 @@
     &__txt {
         font-size: 14px;
         color: #767676;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         min-height: 75px;
     }
 
@@ -42,6 +42,15 @@
         img {
             width: 8px;
             height: auto;
+        }
+    }
+}
+
+
+@include tablet {
+    .slp-approach-tile {
+        &__txt {
+            min-height: 146px;
         }
     }
 }
