@@ -22,26 +22,44 @@
     }
 
     &__txt {
-        font-size: 14px;
+        font-size: 13px;
         color: #767676;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         min-height: 75px;
     }
 
     &__link {
-        display: flex;
+        display: inline-flex;
         align-items: center;
 
         span {
             font-size: 16px;
             font-weight: 700;
             color: #ca0014;
-            margin-right: 32px;
+            margin-right: 16px;
         }
 
         img {
-            width: 8px;
+            width: 6px;
             height: auto;
+            padding-top: 2px;
+            transition: 0.3s;
+        }
+
+        &:hover {
+            img {
+                transform: translateX(4px);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+
+@include tablet {
+    .slp-approach-tile {
+        &__txt {
+            min-height: 120px;
         }
     }
 }

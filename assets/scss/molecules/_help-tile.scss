@@ -27,7 +27,7 @@
         margin-bottom: 14px;
     }
     &__desc{
-        font-size: 14px;
+        font-size: 13px;
         margin-bottom: 20px;
         color: var(--clr-grey);
         font-weight: $font-semi-bold;
@@ -48,6 +48,20 @@
         }
     }
 }
+
+@include tablet {
+    .slp-help {
+        &__title {
+            min-height: 71px;
+        }
+        &__desc {
+            min-height: 102px;
+        }
+    }
+    
+}
+
+
 @include mobile{
     .slp-help{
         &__in{
