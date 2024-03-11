@@ -7,6 +7,14 @@
     &__in{
         display: flex;
     }
+    &__txt {
+        p {
+            color: #000;
+            font-size: 15px;
+            padding-bottom: 4px;
+            font-weight: 500;
+        }
+    }
     &__tile{
         width: calc(33.33% - 16px);
         margin:0px 8px;
