@@ -51,6 +51,12 @@
         width: 65%;
         justify-content: space-between;
     }
+
+    &.social {
+        .navbar-expand-lg .navbar-collapse {
+            justify-content: flex-end;
+        }
+    }
 }
 
 @include mobile-tablet {
