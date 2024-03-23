@@ -1,11 +1,9 @@
 .slp-login{
-    padding: 20px 30px 50px;
-    margin: 0 auto;
-    width: 80%;
+    padding: 40px 30px 70px;
     &__main{
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center bottom;
+        background-position: 0%;
     }
     .slp-heading__red{
         text-align: center;
@@ -16,6 +14,9 @@
             display: block;
             font-size: 40px;
         }
+    }
+    .slp-title__txt.slp-title__txt--black {
+        padding-top: 24px;
     }
     &__text{
         text-align: center;
@@ -33,7 +34,9 @@
         &-main{
             display: flex;
             justify-content: space-between;
-            padding-top:40px;
+            padding-top: 40px;
+            width: 80%;
+            margin: 0 auto;
         }
         .slp-heading__red{
             font-size: 15px;
@@ -124,9 +127,14 @@
         &__form{
             &-main{
                 flex-direction: column;
+                justify-content: center;
             }
             width: 100%;
             margin-bottom: 40px;
+        }
+        &__form-slider {
+            width: 70%;
+            margin: 0 auto;
         }
     }
 }
