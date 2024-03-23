@@ -1,0 +1,132 @@
+.slp-login{
+    padding: 20px 30px 50px;
+    margin: 0 auto;
+    width: 80%;
+    &__main{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .slp-heading__red{
+        text-align: center;
+        font-size: 50px;
+        font-weight: $font-bold;
+        span{
+            color: #1F3D7B;
+            display: block;
+            font-size: 40px;
+        }
+    }
+    &__text{
+        text-align: center;
+        color: #1F3D7B;
+        font-weight: $font-regular;
+        // width: 80%;
+        // margin:  0px auto 20px;
+        &--blk{
+            color: #000;
+        }
+    }
+    &__form{
+        width: 40%;
+        margin-right: 32px;
+        &-main{
+            display: flex;
+            justify-content: space-between;
+            padding-top:40px;
+        }
+        .slp-heading__red{
+            font-size: 15px;
+            text-align: left;
+        }
+        &-slider {
+            width: 40%;
+        }
+    }
+
+    &__img-sec {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .slp-button{
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    &__sep{
+        position: relative;
+        text-align: center;
+        margin-bottom: 15px;
+        span{
+            background-color: #fff;
+            color: rgba(0, 0, 0, 0.6);
+            padding: 0 5px;
+            position: relative;
+            z-index: 2;
+            font-size: 14px;
+        }
+        &::after{
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            left: 0;
+            top: 12px;
+            z-index: 1;
+        }
+    }
+    &__log{
+        font-size: 14px;
+        color: var(--clr-black);
+        a{
+            color: var(--clr-red);
+            font-weight: $font-bold;
+        }
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        width: 30px;
+    }
+    .slick-dots li button:before {
+        height: 3px;
+        width: 25px;
+        background-color: #CA0014;
+        content: "";
+        top: 50%;
+    }
+    .slick-dots li button {
+        padding: 0;
+        width: 30px;
+    }
+    .slick-dots li {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
+@include mobile-tablet{
+    .slp-login{
+        padding: 20px 0px 50px;
+        .slp-heading__red{
+            font-size: 25px;
+            span{
+                font-size: 18px;
+            }
+        }
+        &__text{
+        width: 100%;
+        }
+        &__form{
+            &-main{
+                flex-direction: column;
+            }
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}

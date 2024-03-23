@@ -1,0 +1,44 @@
+.slp-title {
+    margin: 0 auto;
+    h2 {
+        color: #1F3D7B;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__red {
+        color: #CA0014;
+        font-size: 63px;
+        font-weight: 800;
+        text-align: center;
+    }
+    &__txt {
+        color: #1F3D7B;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        &--black {
+            color: #000;
+        }
+        &--bottom {
+            font-weight: 600;
+        }
+    }
+}
+
+@include mobile-tablet {
+    .slp-title {
+        h2 {
+            font-size: 28px;
+        }
+        &__red {
+            font-size: 32px;
+        }
+        &__txt {
+            font-size: 16px;
+            &--bottom {
+                font-weight: 600;
+            }
+        }
+    }
+}
