@@ -1,12 +1,29 @@
 .slp-login{
-    padding: 20px 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    .slp-title__txt.slp-title__txt--black {
-        padding-top: 24px;
+    padding: 20px 30px 50px;
+    &__main{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .slp-heading__red{
+        text-align: center;
+        font-size: 50px;
+        font-weight: $font-bold;
+        span{
+            color: #1F3D7B;
+            display: block;
+            font-size: 40px;
+        }
+    }
+    &__text{
+        text-align: center;
+        color: #1F3D7B;
+        font-weight: $font-regular;
+        // width: 80%;
+        // margin:  0px auto 20px;
+        &--blk{
+            color: #000;
+        }
     }
     &__form{
         width: 30%;
@@ -14,9 +31,7 @@
         &-main{
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding-top: 32px;
-            width: 80%;
+            padding-top:40px;
         }
         .slp-heading__red{
             font-size: 15px;
@@ -48,6 +63,35 @@
             left: 0;
             top: 12px;
             z-index: 1;
+        }
+    }
+    &__log{
+        font-size: 14px;
+        color: var(--clr-black);
+        a{
+            color: var(--clr-red);
+            font-weight: $font-bold;
+        }
+    }
+}
+@include mobile-tablet{
+    .slp-login{
+        padding: 20px 0px 50px;
+        .slp-heading__red{
+            font-size: 25px;
+            span{
+                font-size: 18px;
+            }
+        }
+        &__text{
+        width: 100%;
+        }
+        &__form{
+            &-main{
+                flex-direction: column;
+            }
+            width: 100%;
+            margin-bottom: 40px;
         }
     }
 }
