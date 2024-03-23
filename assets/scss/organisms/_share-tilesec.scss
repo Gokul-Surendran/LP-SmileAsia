@@ -1,0 +1,132 @@
+.slp-sharesec {
+    box-shadow: 0px 0px 12px 0px #1F3D7B66;
+    background-color: #F3F7FF;
+    border-radius: 10px;
+    padding: 16px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+
+    &__img {
+        margin: 0 auto;
+        width: 70%;
+        height: 430px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__tile {
+        width: calc(33.3% - 32px);
+        margin: 0 16px;
+    }
+
+    &__tileimg {
+        padding: 16px 8px;
+
+        img {
+            width: 100%;
+            height: 425px;
+        }
+    }
+
+    &__btn {
+        padding: 8px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        width: 100%;
+        background: var(--btn-color);
+        color: var(--clr-white);
+        font-weight: 600;
+        border: 1px solid var(--btn-color);
+        transition: 0.3s;
+
+        &:hover {
+            background: var(--clr-white);
+            color: var(--btn-color);
+            border: 1px solid var(--btn-color);
+            transition: 0.3s;
+
+            svg {
+                path {
+                    transition: 0.3s;
+                    fill: var(--btn-color);
+                }
+            }
+        }
+
+        &--insta {
+            &:hover {
+                border: 1px solid #FA7E1E;
+
+                svg {
+                    path {
+                        transition: 0.3s;
+                        fill: #D62976;
+                    }
+                }
+            }
+        }
+
+        span {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+
+                path {
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .slp-sharesec {
+        &__tile {
+            width: calc(50% - 32px);
+            margin: 0 16px;
+        }
+    }
+}
+
+@include mobile {
+    .slp-sharesec {
+        margin: 0 16px;
+        padding: 4px 0;
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__tile {
+            width: calc(100% - 32px);
+            margin: 0 0px;
+        }
+
+        &__tileimg {
+            padding: 16px 8px;
+
+            img {
+                width: 100%;
+                height: 340px;
+            }
+        }
+
+    }
+}
