@@ -1,0 +1,47 @@
+.slp-pageheader {
+    background-color: var(--clr-black90);
+    padding: 16px 0;
+
+    &__outer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: inline-flex;
+        width: 160px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+
+        a {
+            padding: 0 8px;
+            border-right: 1px solid var(--clr-white);
+            color: var(--clr-white);
+
+            &:last-child {
+                color: var(--clr-red);
+                border: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .slp-pageheader {
+        &__logo {
+            width: 120px;
+        }
+    }
+}
