@@ -1,5 +1,5 @@
 .slp-login{
-    padding: 20px 0 50px;
+    padding: 20px 30px 50px;
     &__main{
         background-size: contain;
         background-repeat: no-repeat;
@@ -19,8 +19,8 @@
         text-align: center;
         color: #1F3D7B;
         font-weight: $font-regular;
-        width: 80%;
-        margin:  0px auto 20px;
+        // width: 80%;
+        // margin:  0px auto 20px;
         &--blk{
             color: #000;
         }
@@ -75,6 +75,7 @@
 }
 @include mobile-tablet{
     .slp-login{
+        padding: 20px 0px 50px;
         .slp-heading__red{
             font-size: 25px;
             span{
