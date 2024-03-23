@@ -1,5 +1,7 @@
 .slp-login{
     padding: 20px 30px 50px;
+    margin: 0 auto;
+    width: 80%;
     &__main{
         background-size: contain;
         background-repeat: no-repeat;
@@ -26,7 +28,7 @@
         }
     }
     &__form{
-        width: 30%;
+        width: 40%;
         margin-right: 32px;
         &-main{
             display: flex;
@@ -37,7 +39,20 @@
             font-size: 15px;
             text-align: left;
         }
+        &-slider {
+            width: 40%;
+        }
     }
+
+    &__img-sec {
+        width: 100%;
+        height: auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
     .slp-button{
         height: 40px;
         margin-bottom: 15px;
@@ -72,6 +87,26 @@
             color: var(--clr-red);
             font-weight: $font-bold;
         }
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        width: 30px;
+    }
+    .slick-dots li button:before {
+        height: 3px;
+        width: 25px;
+        background-color: #CA0014;
+        content: "";
+        top: 50%;
+    }
+    .slick-dots li button {
+        padding: 0;
+        width: 30px;
+    }
+    .slick-dots li {
+        width: auto;
+        height: auto;
+        margin: 0;
     }
 }
 @include mobile-tablet{
