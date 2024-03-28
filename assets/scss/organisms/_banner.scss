@@ -14,12 +14,12 @@
     
 
     &__left {
-        width: calc(50% - 32px);
+        width: calc(45% - 32px);
         margin: 0 16px;
     }
 
     &__right {
-        width: calc(50% - 32px);
+        width: calc(55% - 32px);
         margin: 0 16px;
         display: flex;
         justify-content: flex-end;
@@ -52,7 +52,7 @@
     }
     
     &__heading {
-        font-size: 50px;
+        font-size: 40px;
         color: #0C2C84;
         font-weight: 800;
         padding-bottom: 24px;
