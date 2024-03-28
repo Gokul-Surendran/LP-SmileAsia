@@ -1,0 +1,56 @@
+.slp-modal {
+    .btn-close {
+        background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.42054 31.5795C3.6536 29.8729 2.24423 27.8316 1.27466 25.5745C0.305094 23.3174 -0.205251 20.8898 -0.226596 18.4334C-0.247942 15.977 0.220139 13.5409 1.15034 11.2674C2.08053 8.99377 3.45421 6.92821 5.19123 5.1912C6.92824 3.45418 8.9938 2.0805 11.2674 1.15031C13.541 0.220109 15.977 -0.247973 18.4335 -0.226627C20.8899 -0.205281 23.3174 0.305064 25.5745 1.27463C27.8316 2.2442 29.873 3.65357 31.5795 5.42051C34.9495 8.90965 36.8142 13.5828 36.772 18.4334C36.7299 23.2841 34.7842 27.9241 31.3542 31.3542C27.9241 34.7842 23.2841 36.7298 18.4335 36.772C13.5828 36.8141 8.90968 34.9494 5.42054 31.5795ZM21.09 18.5L26.3255 13.2645L23.717 10.656L18.5 15.8915L13.2645 10.656L10.656 13.2645L15.8915 18.5L10.656 23.7355L13.2645 26.344L18.5 21.1085L23.7355 26.344L26.344 23.7355L21.1085 18.5H21.09Z' fill='%23CA0014'/%3E%3C/svg%3E%0A");
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 25px;
+        height: 25px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    
+    .modal-header {
+        padding: 8px 8px 0;
+        margin-left: auto;
+        border: 0;
+    }
+    .modal-content {
+        border-radius: 20px;
+    }
+    .modal-dialog {
+        max-width: 700px;
+    }
+    .modal-body {
+        padding-bottom: 0;
+        border-bottom: 25px solid #D5D5D5;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 0;
+    }
+    .slp-sharesec__btn {
+        margin-bottom: 24px;
+    }
+    &__out {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .slp-sharesec__btn {
+        flex-direction: row-reverse;
+        transition: 0.3s;
+        border: 0;
+        &:hover {
+            border: 0;
+            color: #fff;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        span {
+            margin-left: 8px;
+        }
+    }
+}
